@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="../public/styles/style.css" />
   </head>
   <body>
     <main>
@@ -24,19 +24,30 @@
       <div class="controls-container">
         <div class="slider-container">
           <input class="slider-input" type="range" min="1" max="10" value="5" />
+          <div class="slider-value" id="slider-value">x5</div>
         </div>
 
         <div class="buttons-container">
           <button class="play-button">
             <span id="play" class="play-icon"></span>
-            <button>
-              <span class="stop-icon"></span>
-            </button>
           </button>
+          <button>
+            <span class="stop-icon"></span>
+          </button>
+          <button class="upload-button" id="upload-button">
+            <span id="upload" class="upload-icon"></span>
+          </button>
+          <input
+            type="file"
+            id="fileInput"
+            accept=".xml"
+            style="display: none"
+          />
         </div>
       </div>
+      <div class="upload-container"></div>
     </footer>
 
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

@@ -25,7 +25,7 @@ main {
 }
 footer {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -51,6 +51,7 @@ footer {
   border-radius: 30px;
 }
 .slider-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +59,7 @@ footer {
   margin-right: 40px;
 }
 .slider-input {
+  margin-left: 20px;
   appearance: none;
   width: 100%;
   height: 42px;
@@ -72,6 +74,13 @@ footer {
   border-radius: 50%;
   background-color: #636363;
   cursor: pointer;
+}
+.slider-value {
+  text-align: center;
+  color: #636363;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .buttons-container {
   height: 100%;
@@ -92,7 +101,8 @@ footer {
 }
 .buttons-container .pause-icon,
 .buttons-container .stop-icon,
-.buttons-container .play-icon {
+.buttons-container .play-icon,
+.buttons-container .upload-icon {
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -104,13 +114,18 @@ footer {
 .buttons-container .pause-icon {
   background-image: url('../assets/icons/pause-icon.svg');
 }
+.buttons-container .upload-icon {
+  background-image: url('../assets/icons/upload-icon.svg');
+}
 .buttons-container .stop-icon {
   background-image: url('../assets/icons/stop-icon.svg');
 }
 .buttons-container .play-icon {
   background-image: url('../assets/icons/play-icon.svg');
 }
+
 .pause-icon:hover,
+.upload-icon:hover,
 .play-icon:hover,
 .stop-icon:hover {
   filter: brightness(70%);
@@ -141,7 +156,7 @@ footer {
     margin-right: 30px;
   }
 
-  .buttons-container button {
+  button {
     width: 40px;
     height: 40px;
   }
@@ -167,11 +182,11 @@ footer {
     height: 45px;
   }
 
-  .buttons-container button:not(:last-child) {
+  button:not(:last-child) {
     margin-right: 20px;
   }
 
-  .buttons-container button {
+  button {
     width: 35px;
     height: 35px;
   }
