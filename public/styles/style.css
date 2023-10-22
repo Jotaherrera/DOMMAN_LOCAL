@@ -161,49 +161,15 @@ footer {
     height: 40px;
   }
 }
-@media (max-width: 500px) {
-  .controls-container {
-    height: 70px;
-    border-radius: 25px;
-  }
-
-  .slider-container {
-    width: 50%;
-    margin-right: 25px;
-  }
-
-  .slider-input {
-    height: 35px;
-    border-radius: 8px;
-  }
-
-  .slider-input::-webkit-slider-thumb {
-    width: 45px;
-    height: 45px;
-  }
-
-  .buttons-container button:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  .buttons-container button {
-    width: 35px;
-    height: 35px;
-  }
-}
 @media (max-width: 570px) {
   .words-container {
     font-size: 8.5rem;
   }
 }
-@media (max-width: 480px) {
-  .words-container {
-    font-size: 6.4rem;
-  }
-}
-
 @media (max-width: 500px) {
   .controls-container {
+    height: 70px;
+    border-radius: 25px;
     flex-direction: column;
     height: auto;
     gap: 20px;
@@ -211,19 +177,34 @@ footer {
     padding-bottom: 20px;
     align-items: center;
   }
-
   .slider-container {
     flex-direction: column;
     width: 100%;
     margin: 0;
   }
-
+  .slider-input {
+    height: 35px;
+    border-radius: 8px;
+    margin: 0;
+    width: 90%;
+  }
+  .slider-input::-webkit-slider-thumb {
+    width: 45px;
+    height: 45px;
+  }
   .slider-value {
     display: none;
   }
-
-  .slider-input {
-    margin: 0;
-    width: 90%;
+  .buttons-container button {
+    width: 35px;
+    height: 35px;
+  }
+  .upload-button {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .words-container {
+    font-size: 6.4rem;
   }
 }
