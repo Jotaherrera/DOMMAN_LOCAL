@@ -156,7 +156,7 @@ footer {
     margin-right: 30px;
   }
 
-  button {
+  .buttons-container button {
     width: 40px;
     height: 40px;
   }
@@ -182,11 +182,11 @@ footer {
     height: 45px;
   }
 
-  button:not(:last-child) {
+  .buttons-container button:not(:last-child) {
     margin-right: 20px;
   }
 
-  button {
+  .buttons-container button {
     width: 35px;
     height: 35px;
   }
@@ -199,5 +199,31 @@ footer {
 @media (max-width: 480px) {
   .words-container {
     font-size: 6.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .controls-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .slider-value {
+    display: none;
+  }
+
+  .slider-input {
+    margin: 0;
+    width: 90%;
   }
 }
